@@ -1,0 +1,97 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f7f7f7;
+    margin: 0;
+    padding: 0;
+}
+
+.container, .container2 {
+    max-width: 600px;
+    margin: 50px auto;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+
+h1, h2 {
+    color: #333;
+}
+
+#taskForm {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+#task, #priority {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+button {
+    width: 100%;
+    background-color: #4caf50;
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+.task-item {
+    background-color: #fff;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: background-color 0.3s ease;
+}
+
+.task-item:hover {
+    background-color: #f9f9f9;
+}
+
+.task-item .action-icons {
+    display: flex;
+    gap: 10px;
+}
+
+.task-item .action-icons i {
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.task-item .action-icons i:hover {
+    color: #45a049;
+}
+
+.edit-task-input,
+.edit-task-input-button {
+    margin-bottom: 10px;
+}
+
+.completed {
+    text-decoration: line-through;
+    opacity: 0.7;
+}
